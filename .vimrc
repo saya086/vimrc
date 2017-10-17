@@ -1,12 +1,26 @@
-set number " 显示行号
-set autoindent " 设置自动对齐
-set smartindent " 设置智能对齐
+" Use Vim defaults (much better!)
+set nocompatible " VIM不兼容VI模式
+
+"set autoindent " 设置自动对齐
+"set smartindent " 设置智能对齐
+
 set showcmd " 命令行显示输入的命令
 set showmode " 命令行显示Vim当前模式
-set tabstop=4 " 设置tab的宽度为4个空格（默认是8）
-set softtabstop=4 " 设置tab所占的列数，当输入tab时，设为4个空格的宽度
+
+filetype indent on " 自适应不同语言的智能缩进
 set expandtab " 扩展tab为空格
+set tabstop=4 " 设置tab的宽度（默认是8）
+set softtabstop=4 " 设置tab所占的列数，当输入tab时，设为4个空格的宽度
 set shiftwidth=4 " （自动）缩进使用的4个空格
+
+"set laststatus=2 " 总是显示状态栏
+set ruler " 显示光标当前位置
+set number " 显示行号
+"set cursorline " 高亮显示当前行
+"set cursorcolumn " 高亮显示当前列
+
+"set cindent " 使用 C/C++ 语言的自动缩进方式
+"set cinoptions={0,1s,t0,n-2,p2s,(03s,=.5s,>1s,=1s,:1s " 设置C/C++语言的具体缩进方式
 
 " jk映射<Esc>（插入模式）
 inoremap jk <esc> 
