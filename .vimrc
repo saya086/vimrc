@@ -1,6 +1,8 @@
 " Use Vim defaults (much better!)
 set nocompatible " VIM不兼容VI模式
 
+set fileencodings=ucs-bom,utf-8,gb18030,latin1
+
 "set autoindent " 设置自动对齐
 "set smartindent " 设置智能对齐
 
