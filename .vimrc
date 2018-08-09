@@ -33,3 +33,6 @@ nnoremap <leader><space> :noh<cr>
 
 set incsearch " 输入字符串就显示匹配点
 set ignorecase smartcase " 搜索智能忽略大小写（默认大小写敏感）
+
+let @b="i#!/bin/bash\n\njk"
+let @p="i#!/usr/bin/env python\n# -*- coding: utf-8 -*-\n\njk"
