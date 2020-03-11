@@ -2,20 +2,29 @@
 set nocompatible " VIM不兼容VI模式
 
 set fileencodings=ucs-bom,utf-8,cp936,latin1
+set autoread " 打开文件监视
+set wildmenu
+set wildmode=longest:list,full
 
 "set autoindent " 设置自动对齐
 "set smartindent " 设置智能对齐
+"set t_Co=256
 
 set showcmd " 命令行显示输入的命令
 set showmode " 命令行显示Vim当前模式
+set showmatch " 自动高亮匹配字符
 
+filetype on " 侦测文件类型
+filetype plugin on " 载入文件类型插件
 filetype indent on " 自适应不同语言的智能缩进
+filetype plugin indent on " 打开文件类型检测
+
 set expandtab " 扩展tab为空格
 set tabstop=4 " 设置tab的宽度（默认是8）
 set softtabstop=4 " 设置tab所占的列数，当输入tab时，设为4个空格的宽度
 set shiftwidth=4 " （自动）缩进使用的4个空格
 
-"set laststatus=2 " 总是显示状态栏
+set laststatus=2 " 总是显示状态栏
 set ruler " 显示光标当前位置
 set number " 显示行号
 "set cursorline " 高亮显示当前行
